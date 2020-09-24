@@ -23,7 +23,7 @@ public class EditLeafGround {
 	    clearText.clear();
 	    clearText.sendKeys("Text Cleared");
 	    
-		boolean textboxStatus = driver.findElementByXPath("(//input[@type = 'text'])[5]").isDisplayed();
+		boolean textboxStatus = driver.findElementByXPath("(//input[@type = 'text'])[5]").isEnabled();
 		System.out.println("Text box is : "+textboxStatus);
 		
 		driver.close();
